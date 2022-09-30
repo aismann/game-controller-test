@@ -1,5 +1,6 @@
 /****************************************************************************
  Copyright (c) 2017-2018 Xiamen Yaji Software Co., Ltd.
+ Copyright (c) 2022      @aismann; Peter Eismann, Germany; dreifrankensoft
  
  http://www.ax-x.org
  
