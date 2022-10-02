@@ -31,7 +31,7 @@
 #include "GameControllerTest.h"
 #include "AppMacros.h"
 
-USING_NS_CC;
+USING_NS_AX;
 using namespace std;
 
 AppDelegate::AppDelegate() {

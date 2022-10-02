@@ -1,37 +1,38 @@
     /**
-     * Controllers' standard  key
-     * Controller receives only standard key which contained within enum Key by default.
+    Copyright (c) 2022      @aismann; Peter Eismann, Germany; dreifrankensoft
+     works with PS4 (dualshock), Xbox One Controller
+     PS3 works with the original Controller::Key settings
      */
-    enum Key
+    enum Key  // overwrite Controller::Key 
     {
         KEY_NONE = 0,
 
-        JOYSTICK_LEFT_X = 1000,
-        JOYSTICK_LEFT_Y,
-        JOYSTICK_RIGHT_X,
-        JOYSTICK_RIGHT_Y,
+        JOYSTICK_LEFT_X = 0,
+        JOYSTICK_LEFT_Y = 1,
+        JOYSTICK_RIGHT_X =2,
+        JOYSTICK_RIGHT_Y =3,
 
-        BUTTON_A,
-        BUTTON_B,
-        BUTTON_C,
-        BUTTON_X,
-        BUTTON_Y,
-        BUTTON_Z,
+        BUTTON_A = 0,
+        BUTTON_B = 1,
+        BUTTON_C = 7, //share
+        BUTTON_X = 2,
+        BUTTON_Y = 3,
+        BUTTON_Z = 6, //options
 
-        BUTTON_DPAD_UP,
-        BUTTON_DPAD_DOWN,
-        BUTTON_DPAD_LEFT,
-        BUTTON_DPAD_RIGHT,
+        BUTTON_DPAD_UP = 10 ,
+        BUTTON_DPAD_DOWN = 12,
+        BUTTON_DPAD_LEFT = 13,
+        BUTTON_DPAD_RIGHT = 11,
         BUTTON_DPAD_CENTER,
 
-        BUTTON_LEFT_SHOULDER,
-        BUTTON_RIGHT_SHOULDER,
+        BUTTON_LEFT_SHOULDER = 4,
+        BUTTON_RIGHT_SHOULDER =5,
 
-        AXIS_LEFT_TRIGGER,
-        AXIS_RIGHT_TRIGGER,
+        AXIS_LEFT_TRIGGER = 4,
+        AXIS_RIGHT_TRIGGER =5,
 
-        BUTTON_LEFT_THUMBSTICK,
-        BUTTON_RIGHT_THUMBSTICK,
+        BUTTON_LEFT_THUMBSTICK = 8,
+        BUTTON_RIGHT_THUMBSTICK = 9,
 
         BUTTON_START,
         BUTTON_SELECT,

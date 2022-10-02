@@ -26,10 +26,10 @@
 #ifndef __GAMECONTROLLER_TEST_H__
 #define __GAMECONTROLLER_TEST_H__
 
-#include "axys.h"
+#include "axmol.h"
 #include "base/CCGameController.h"
 
-USING_NS_CC;
+USING_NS_AX;
 
 class GameControllerTest : public ax::Layer
 {

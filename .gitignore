@@ -1,0 +1,8 @@
+build_64
+proj.android
+proj.ios
+proj.ios_mac
+proj.linux
+proj.mac
+proj.win32
+

@@ -25,8 +25,9 @@
 
 #include "GameControllerTest.h"
 #include "AppMacros.h"
+#include "KeyMapping.h"
 
-USING_NS_CC;
+USING_NS_AX;
 
 GameControllerTest::~GameControllerTest()
 {
@@ -194,46 +195,46 @@ void GameControllerTest::showButtonState(ax::Controller *controller, int keyCode
     {
         switch (keyCode)
         {
-        case Controller::Key::BUTTON_A:
+        case Key::BUTTON_A:
             holder->_buttonA->setColor(Color3B(250,103,93));
             break;
-        case Controller::Key::BUTTON_B:
+        case Key::BUTTON_B:
             holder->_buttonB->setColor(Color3B(92,214,183));
             break;
-        case Controller::Key::BUTTON_X:
+        case Key::BUTTON_X:
             holder->_buttonX->setColor(Color3B(96,113,192));
             break;
-        case Controller::Key::BUTTON_Y:
+        case Key::BUTTON_Y:
             holder->_buttonY->setColor(Color3B(199,222,118));
             break;
-        case Controller::Key::BUTTON_DPAD_UP:
+        case Key::BUTTON_DPAD_UP:
             holder->_dpadUp->setColor(Color3B(0,115,158));
             break;
-        case Controller::Key::BUTTON_DPAD_DOWN:
+        case Key::BUTTON_DPAD_DOWN:
             holder->_dpadDown->setColor(Color3B(0,115,158));
             break;
-        case Controller::Key::BUTTON_DPAD_LEFT:
+        case Key::BUTTON_DPAD_LEFT:
             holder->_dpadLeft->setColor(Color3B(170,216,0));
             break;
-        case Controller::Key::BUTTON_DPAD_RIGHT:
+        case Key::BUTTON_DPAD_RIGHT:
             holder->_dpadRight->setColor(Color3B(170,216,0));
             break;
-        case Controller::Key::BUTTON_LEFT_SHOULDER:
+        case Key::BUTTON_LEFT_SHOULDER:
             holder->_buttonL1->setColor(Color3B(19,231,238));
             break;
-        case Controller::Key::BUTTON_RIGHT_SHOULDER:
+        case Key::BUTTON_RIGHT_SHOULDER:
             holder->_buttonR1->setColor(Color3B(19,231,238));
             break;
-        case Controller::Key::BUTTON_LEFT_THUMBSTICK:
+        case Key::BUTTON_LEFT_THUMBSTICK:
             holder->_leftJoystick->setColor(Color3B(19,231,238));
             break;
-        case Controller::Key::BUTTON_RIGHT_THUMBSTICK:
+        case Key::BUTTON_RIGHT_THUMBSTICK:
             holder->_rightJoystick->setColor(Color3B(19,231,238));
             break;
-        case Controller::Key::BUTTON_C:
+        case Key::BUTTON_C:
             holder->_share->setColor(Color3B::BLACK);
             break;
-        case Controller::Key::BUTTON_Z:
+        case Key::BUTTON_Z:
             holder->_options->setColor(Color3B::BLACK);
             break;
         default:
@@ -249,46 +250,46 @@ void GameControllerTest::showButtonState(ax::Controller *controller, int keyCode
     {
         switch (keyCode)
         {
-        case Controller::Key::BUTTON_A:
+        case Key::BUTTON_A:
             holder->_buttonA->setColor(Color3B::WHITE);
             break;
-        case Controller::Key::BUTTON_B:
+        case Key::BUTTON_B:
             holder->_buttonB->setColor(Color3B::WHITE);
             break;
-        case Controller::Key::BUTTON_X:
+        case Key::BUTTON_X:
             holder->_buttonX->setColor(Color3B::WHITE);
             break;
-        case Controller::Key::BUTTON_Y:
+        case Key::BUTTON_Y:
             holder->_buttonY->setColor(Color3B::WHITE);
             break;
-        case Controller::Key::BUTTON_DPAD_UP:
+        case Key::BUTTON_DPAD_UP:
             holder->_dpadUp->setColor(Color3B::WHITE);
             break;
-        case Controller::Key::BUTTON_DPAD_DOWN:
+        case Key::BUTTON_DPAD_DOWN:
             holder->_dpadDown->setColor(Color3B::WHITE);
             break;
-        case Controller::Key::BUTTON_DPAD_LEFT:
+        case Key::BUTTON_DPAD_LEFT:
             holder->_dpadLeft->setColor(Color3B::WHITE);
             break;
-        case Controller::Key::BUTTON_DPAD_RIGHT:
+        case Key::BUTTON_DPAD_RIGHT:
             holder->_dpadRight->setColor(Color3B::WHITE);
             break;
-        case Controller::Key::BUTTON_LEFT_SHOULDER:
+        case Key::BUTTON_LEFT_SHOULDER:
             holder->_buttonL1->setColor(Color3B::WHITE);
             break;
-        case Controller::Key::BUTTON_RIGHT_SHOULDER:
+        case Key::BUTTON_RIGHT_SHOULDER:
             holder->_buttonR1->setColor(Color3B::WHITE);
             break;
-        case Controller::Key::BUTTON_LEFT_THUMBSTICK:
+        case Key::BUTTON_LEFT_THUMBSTICK:
             holder->_leftJoystick->setColor(Color3B::WHITE);
             break;
-        case Controller::Key::BUTTON_RIGHT_THUMBSTICK:
+        case Key::BUTTON_RIGHT_THUMBSTICK:
             holder->_rightJoystick->setColor(Color3B::WHITE);
             break;
-        case Controller::Key::BUTTON_C:
+        case Key::BUTTON_C:
             holder->_share->setColor(Color3B::WHITE);
             break;
-        case Controller::Key::BUTTON_Z:
+        case Key::BUTTON_Z:
             holder->_options->setColor(Color3B::WHITE);
             break;
         default:
@@ -326,22 +327,22 @@ void GameControllerTest::onAxisEvent(ax::Controller* controller, int keyCode, ax
     AXLOG("ketStatus.value: %f onAxisEvent :%d", ketStatus.value, keyCode);
     switch (keyCode)
     {
-    case Controller::Key::JOYSTICK_LEFT_X:
+    case Key::JOYSTICK_LEFT_X:
         holder->_leftJoystick->setPositionX(238 + ketStatus.value * 24);
         break;
-    case Controller::Key::JOYSTICK_LEFT_Y:
+    case Key::JOYSTICK_LEFT_Y:
         holder->_leftJoystick->setPositionY(460 - ketStatus.value * 24);
         break;
-    case Controller::Key::JOYSTICK_RIGHT_X:
+    case Key::JOYSTICK_RIGHT_X:
         holder->_rightJoystick->setPositionX(606 + ketStatus.value * 24);
         break;
-    case Controller::Key::JOYSTICK_RIGHT_Y:
+    case Key::JOYSTICK_RIGHT_Y:
         holder->_rightJoystick->setPositionY(293 - ketStatus.value * 24);
         break;
-    case Controller::Key::AXIS_LEFT_TRIGGER:
+    case Key::AXIS_LEFT_TRIGGER:
         holder->_buttonL2->setOpacity(200 * controller->getKeyStatus(keyCode).value);
         break;
-    case Controller::Key::AXIS_RIGHT_TRIGGER:
+    case Key::AXIS_RIGHT_TRIGGER:
         holder->_buttonR2->setOpacity(200 * controller->getKeyStatus(keyCode).value);
         break;
     default:

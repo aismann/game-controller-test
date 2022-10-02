@@ -25,7 +25,7 @@
 #ifndef __APPMACROS_H__
 #define __APPMACROS_H__
 
-#include "axys.h"
+#include "axmol.h"
 
 /* For demonstrating using one design resolution to match different resources,
    or one resource to match different design resolutions.

@@ -26,7 +26,7 @@
 #ifndef  _APP_DELEGATE_H_
 #define  _APP_DELEGATE_H_
 
-#include "axys.h"
+#include "axmol.h"
 
 /**
 @brief    The ax Application.
