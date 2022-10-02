@@ -190,6 +190,8 @@ void GameControllerTest::showButtonState(ax::Controller *controller, int keyCode
     else
         return;
 
+
+
     AXLOG("isPressed: %f keyCode :%d", isPressed, keyCode);
     if (isPressed)
     {
