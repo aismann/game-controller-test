@@ -1,7 +1,7 @@
 # game-controller-test
 Init version!!!
 
-Example using different game controller like XBox One, PS4, PS3 controller with axys (should also works with cocos2d-x)
+Example using different game controller like XBox One, PS4, PS3 controller with axmol (should also works with cocos2d-x)
 
 Tested on Windows only (at the moment).
 
